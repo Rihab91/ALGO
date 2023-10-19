@@ -1,0 +1,22 @@
+ALGORITHM Three-nb-add
+VAR
+    NM :CHAR
+    NV:CHAR
+    NC:CHAR
+    str:STRING
+    i:INTEGER
+
+BEGIN
+Read(str)
+NC=str.length
+    FOR i FROM 0 TO length-1 STEP 1  DO
+    if (str[i]=="a" or "e" or "u" or "i" or "y")  then
+    NV=NV+1   
+    END_FOR
+     IF (str[i]=="  ") then
+     NM=NM+1
+   END_IF
+   Write ("number of words",NM)
+   Write ("number of voyelles",NV)
+   Write ("number of charaters",NC)
+END
